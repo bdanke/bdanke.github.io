@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<style type="text/css">
+		body, h1, h2, h3, p, div, li, ul {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: inherit;
+			font-family: sans-serif;
+			vertical-align: baseline;
+		}
+
+		.group:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+
+		body {
+			background: lightblue;
+		}
+
+		.resume {
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			width: 8.5in;
+			background: white;
+			border: 3px solid grey;
+			padding: 10px;
+		}
+
+		.photo {
+			margin-right: 5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.info {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.languages > h3 {
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+
+		.project {
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+
+		.code-link {
+			margin-top: 5px;
+			margin-left: 10px;
+		}
+
+		.education-data {
+			float: left;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+
+		.employment-data {
+			float: left;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+
+		.employment-highlights {
+			margin-left: 50px;
+			margin-top: 5px;
+		}
+
+		.employment-highlights > ul >li {
+			margin-top: 3px;
+		}
+
+		.dates {
+			float: right;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="resume">
+			<div class="group">
+				<div class="photo">
+					<img src="http://m.c.lnkd.licdn.com/mpr/pub/image-5K-9cuteberW2LPi1xWkgO3kdQcFqFIM5K-PTPWodw2Iqcoy5K-PTBoedSjA8zNFLp9T/brandon-danker.jpg">
+				</div>
+
+				<div class="info">
+					<h1>Brandon Danker</h1>
+					<h3>227 Terrace Drive | Chatham, NJ 07928 | 862-485-7223 | <a href="mailto:bdanke@gmail.com">bdanke@gmail.com</a></h3>
+				</div>
+			</div>
+
+			<div class="projects group">
+				<h2>Recent Projects</h2>
+				<hr>
+				<div class="project">
+					<h3>Ocular</h3>
+					<p>Social network web application. AJAX handling of status, comment, and like data submission requests. Polymorphic Rails associations for the various types of user notifications. <a href="http://ocular.pw">http://ocular.pw</a></p>
+					<p class="code-link">Source Code: <a href="http://github.com/bdanke/ocular">http://github.com/bdanke/ocular</a></p>
+				</div>
+				<div class="project">
+					<h3>Asteroids</h3>
+					<p>Remake of the classic arcade game in the browser using an HTML5 Canvas element and JavaScript. Objects' movements are controlled by vectors. <a href="./asteroids/asteroids.html">Play!</a></p>
+					<p class="code-link">Source Code: <a href="http://github.com/bdanke/asteroids">http://github.com/bdanke/asteroids</a></p>
+				</div>
+				<div class="project">
+					<h3>ARLite</h3>
+					<p>Remake of ActiveRecord's object relational mapping functionality. Use of Ruby metaprogramming to allow mass assignment and query and association methods.</p>
+					<p class="code-link">Source Code: <a href="http://github.com/bdanke/ARLite">http://githup.com/bdanke/ARLite</a></p>
+				</div>
+			</div>
+
+			<div class="languages">
+				<h2>Languages & Technologies</h2>
+				<hr>
+				<h3>Ruby, JavaScript, Rails, Backbone, SQL, RSpec, HTML, CSS, Git</h3>
+			<div>
+
+			<div class="education group">
+				<h2>Education</h2>
+				<hr>
+				<div class="education-data">
+					<strong>McGill University</strong>
+					<p>Montreal, QC</p>
+					<p>BA Economics</p>
+				</div>
+				<div class="dates">
+					<p>August 2001 - May 2005</p>
+				</div>
+			</div>
+
+			<div class="employment group">
+				<h2>Employment History</h2>
+				<hr>
+				<div class="employment-data">
+					<strong>Cable Installation Specialist</strong>
+					<p>EdjCom. Incorporated</p>
+					<p>Rutland, VT</p>
+				</div>
+				<div class="dates">
+					<p>March 2011 - April 2013</p>
+				</div>
+			</div>
+
+			<div class="employment-highlights">
+				<ul>
+					<li>Solved spatial problems and resolved signal strength issues in relation to preferred locations for installation of cable services.</li>
+					<li>Received bonuses for outstanding customer service.</li>
+				</ul>
+			</div>
+
+		</div>
+	</body>
+</html>
