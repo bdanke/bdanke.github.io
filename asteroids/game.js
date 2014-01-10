@@ -117,8 +117,6 @@
       this.ctx.fillStyle = '#f00';
       this.ctx.fillText('GAME OVER', this.dimX / 2 - 120, this.dimY / 2);
     }
-    key.unbind('p');
-    key.unbind('space');
   };
 
   Screen.prototype.bindKeyHandlers = function() {
