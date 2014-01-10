@@ -5,18 +5,13 @@
     this.dimX = dimX;
     this.dimY = dimY;
     this.ctx = ctx;
-    this.state = false;
     this.numAsteroids = numAsteroids;
-    this.score = 0;
-    this.asteroids = [];
-    this.addAsteroids(numAsteroids);
-    var pos = [dimX/2, dimY/2];
-    this.ship = new Game.Ship(pos,0,-Math.PI/2);
-    this.bullets = [];
+    this.setup();
+    this.bindKeyHandlers();
   };
 
   Screen.prototype.setup = function() {
-    this.bindKeyHandlers();
+    this.switchState();
     this.score = 0;
     this.asteroids = [];
     this.addAsteroids(this.numAsteroids);
@@ -81,18 +76,16 @@
   };
 
   Screen.prototype.start = function() {
-    this.bindKeyHandlers();
-    key('r', this.setup.bind(this));
     this.draw();
   };
 
   Screen.prototype.switchState = function() {
     if (this.state == false) {
-      this.timer = setInterval(this.step.bind(this), 30);
       this.state = true;
+      this.timer = setInterval(this.step.bind(this), 30);
     } else {
-      clearInterval(this.timer);
       this.state = false;
+      clearInterval(this.timer);
     }
   };
 
@@ -113,15 +106,23 @@
     if (this.asteroids.length == 0) {
       this.ctx.fillStyle = '#0f0';
       this.ctx.fillText('YOU WIN!', this.dimX / 2 - 100, this.dimY / 2);
+      this.state = false;
     } else {
       this.ctx.fillStyle = '#f00';
       this.ctx.fillText('GAME OVER', this.dimX / 2 - 120, this.dimY / 2);
+      this.state = false;
     }
   };
 
   Screen.prototype.bindKeyHandlers = function() {
-    key('space', this.addBullet.bind(this));
-    key('p', this.switchState.bind(this));
+    var self = this;
+    key('space', function() { self.addBullet(); return false; });
+    key('r', function() {
+      self.setup();
+      self.switchState();
+      return false;
+    });
+    key('p', function() { self.switchState(); return false; });
   };
 
   Screen.prototype.addBullet = function() {
