@@ -1,0 +1,245 @@
+body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background: #eeeeee;
+}
+
+#calendar-widget {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -160px;
+	margin-left: -380px;
+}
+
+#ridge-1 {
+	width: 774px;
+	border-top: 1px solid #333333;
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px;
+}
+
+#ridge-2 {
+	width: 774px;
+	border-top: 1px solid #888888;
+	border-radius: 10px;
+}
+
+#main-container {
+	width: 760px;
+	height: 320px;
+	border: 7.5px solid #333333;
+	border-top: 5.5px solid #333333;
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px;
+}
+
+#date-display-box {
+	width: 320px;
+	height: 320px;
+	background: #333333;
+	border-right: 3px solid #333333;
+	float: left;
+}
+
+#day-of-the-week {
+	width: 320px;
+	height: 56px;
+	background: linear-gradient( #fb0012, #ad0006 100%);
+	background: -moz-linear-gradient( #fb0012, #ad0006 100%);
+	background: -webkit-linear-gradient( #fb0012, #ad0006 100%);
+	background: -o-linear-gradient( #fb0012, #ad0006 100%);
+	border-top: 1px solid #ff787f;
+	border-bottom: 1px dashed #cd0021;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#current-day-name {
+	padding-top: 12px;
+	color: white;
+	font-size: 25px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#red-border-1{
+	width: 320px;
+	border-top: 1px solid #790000;
+}
+
+#red-border-2 {
+	width: 320px;
+	border-top: 1px solid #cd0021;
+}
+
+#red-border-3 {
+	width: 320px;
+	border-top: 1px solid #790000;
+}
+
+#page-3 {
+	background: #f7f7f7;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #aaaaaa;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
+
+#page-2 {
+	background: #f7f7f7;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #bbbbbb;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
+
+#page-1 {
+	background: #f7f7f7;
+	padding-bottom: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;	
+}
+
+#top-page {
+	width: 320px;
+	height: 247px;
+	background: linear-gradient( #d0d0d0, #f7f7f7 5px);
+	background: -moz-linear-gradient( #d0d0d0, #f7f7f7 5px);
+	background: -webkit-linear-gradient( #d0d0d0, #f7f7f7 5px);
+	background: -o-linear-gradient( #d0d0d0, #f7f7f7 5px);
+	border-bottom: 2px solid #cccccc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#current-day-number {
+	padding-top: 60px;
+	font-size: 170px;
+	font-family: Helvetica;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 125px;
+}
+
+.inset-shadow {
+	background: #f7f7f7;
+	background: -webkit-linear-gradient(#000000, #000000);
+	background: -o-linear-gradient(#000000, #000000);
+	color: #323232;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 3px 5px 5px rgba(255,255,255,0.2);
+	-webkit-background-clip: text;
+}
+
+#calendar-display-box {
+	width: 433px;
+	height: 320px;
+	background: #333333;
+	float: left;
+}
+
+#calendar {
+	width: 433px;
+	height: 320px;
+	background: white;
+	border-left: 3px solid #333333;
+	border-radius: 5px;
+	font-family: Helvetica;
+	overflow: hidden;
+}
+
+#month-picker-box {
+	width: 373px;
+	padding: 22px 30px 0px 30px;
+	font-size: 25px;
+	font-family: Helvetica;
+}
+
+#previous-month {
+	color: #bababa;
+	font-size: 18px;
+	cursor: pointer;
+	float: left;
+}
+
+#month-and-year {
+	width: 349px;
+	color: #6d6d6d;
+	font-weight: lighter;
+	text-align: center;
+	float: left;
+}
+
+#next-month {
+	color: #bababa;
+	font-size: 18px;
+	cursor: pointer;
+	float: right;
+}
+
+#date-grid {
+	display: inline-block;
+	width: 433px;
+	height: 210px;
+	position: relative;
+	left: -433px;
+	margin-top: 23px;
+	padding: 0px 3.5px 0px 3.5px;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.column {
+	width: 60px;
+	height: 100%;
+	color: lightgrey;
+	float: left;
+}
+
+.column-border {
+	border-left: 1px dashed #dddddd;
+}
+
+.grid-box {
+	width: 60px;
+	height: 30px;
+	padding: 5px 0px 4px 0px;
+	color: #999999;
+	line-height: normal;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.date-grid-day {
+	width: 60px;
+	height: 30px;
+	padding: 5px 0px 4px 0px;	
+	color: #fb0012;
+	line-height: normal;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.current-date {
+	background: red;
+	color: white;
+}
